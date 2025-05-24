@@ -6,6 +6,6 @@ services:
     startCommand: python peacebot.py
     envVars:
       - key: TOKEN
-        value: YOUR_TELEGRAM_BOT_TOKEN
+        value: 7886033647:AAGH7N13PFIid4bENW7z1FXXtKItLkSYKds
       - key: CHAT_ID
-        value: YOUR_TELEGRAM_CHAT_ID
+        value: 6850895111
