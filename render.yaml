@@ -1,7 +1,11 @@
 services:
   - type: web
     name: peacebot
-    env: python
-    plan: free
-    buildCommand: ""
+    runtime: python
+    buildCommand: pip install -r requirements.txt
     startCommand: python peacebot.py
+    envVars:
+      - key: TOKEN
+        value: YOUR_TELEGRAM_BOT_TOKEN
+      - key: CHAT_ID
+        value: YOUR_TELEGRAM_CHAT_ID
